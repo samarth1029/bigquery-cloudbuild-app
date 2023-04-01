@@ -57,6 +57,25 @@ Project Organization
 --------
 
 # Usage
+
+### Calling The API
+
+After cloning the repository, one is first required to provide their service account credentials for gcp as GOOGLE_APPLICATION_CREDENTIALS in the .env file.
+The API endpoint can be called as shown below to fetch results:
+
+```
+url = "https://bigquery-cloudbuild-f7q24pru5q-ey.a.run.app/bigquery_operation_results"
+headers = {"Content-type": "application/json"}
+_dict = {
+"query": f'''
+        SELECT * FROM `project_name.dataset_name.table_name`        
+        ''',
+"gbq_table_id": "project_name.dataset_name.table_name",
+}
+_response = requests.post(url, headers=headers, json=_dict)
+_result = _response.json()
+```
+
 ### Requirements
 #### Python - v3.9 minimum
 
