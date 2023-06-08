@@ -2,6 +2,8 @@ bigquery-cloudbuild-app: execute queries and fetch results from Google BigQuery
 ==============================
 
 This package can be used from within other python packages, or as a standalone CLI service to get data from bigquery table.
+![Tests](https://github.com/samarth1029/bigquery-cloudbuild-app/actions/workflows/deploy_sandbox.yaml/badge.svg)
+
 
 
 Project Organization
