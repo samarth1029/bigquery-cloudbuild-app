@@ -132,7 +132,7 @@ docker-compose up -d --build
 ```
 
 
-## API documentation (provided by Swagger UI)
+## API documentation (by Swagger UI)
 
 ```
 http://127.0.0.1:8000/docs
