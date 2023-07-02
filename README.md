@@ -103,6 +103,42 @@ To use bigquery-cloudbuild-app as an imported package from another python projec
     ```bash
     $ source .venv/Scripts/activate
     ```
+## Run local
+
+### Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### Run server
+
+```
+uvicorn app.main:app --reload
+```
+
+### Run test
+
+```
+pytest app/test.py
+```
+
+## Run with docker
+
+### Run server
+
+```
+docker-compose up -d --build
+```
+
+
+## API documentation (provided by Swagger UI)
+
+```
+http://127.0.0.1:8000/docs
+```
+
+
 
 # Testing
 
